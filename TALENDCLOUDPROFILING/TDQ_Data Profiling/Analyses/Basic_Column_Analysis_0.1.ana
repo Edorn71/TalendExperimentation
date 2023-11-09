@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_6P9PMXPyEe6Qp-p8N_i0kg" name="Basic Column Analysis" creationDate="2023-10-26T13:29:22.339+0100">
+  <taggedValue xmi:id="_6P9PMnPyEe6Qp-p8N_i0kg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_6P9PM3PyEe6Qp-p8N_i0kg" tag="Author" value="adrian.m.rutter@trial25682.eu.talend.com"/>
+  <taggedValue xmi:id="_6P9PNHPyEe6Qp-p8N_i0kg" tag="Purpose"/>
+  <taggedValue xmi:id="_6P9PNXPyEe6Qp-p8N_i0kg" tag="Description"/>
+  <taggedValue xmi:id="_6P9PNnPyEe6Qp-p8N_i0kg" tag="Version" value="0.1"/>
+  <context xmi:id="_6P9PN3PyEe6Qp-p8N_i0kg"/>
+  <results xmi:id="_6P9POHPyEe6Qp-p8N_i0kg">
+    <resultMetadata xmi:id="_6P9POXPyEe6Qp-p8N_i0kg"/>
+  </results>
+  <parameters xmi:id="_6P9POnPyEe6Qp-p8N_i0kg" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
