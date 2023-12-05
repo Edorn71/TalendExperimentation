@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_0VAQIJNhEe6ztpJtSbfQrw" name="Business Rule" creationDate="2023-12-05T12:31:22.776+0000">
+  <taggedValue xmi:id="_0VAQIZNhEe6ztpJtSbfQrw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_0VAQIpNhEe6ztpJtSbfQrw" tag="Author" value="adrian.m.rutter@trial26375.eu.talend.com"/>
+  <taggedValue xmi:id="_0VAQI5NhEe6ztpJtSbfQrw" tag="Purpose"/>
+  <taggedValue xmi:id="_0VAQJJNhEe6ztpJtSbfQrw" tag="Description"/>
+  <taggedValue xmi:id="_0VAQJZNhEe6ztpJtSbfQrw" tag="Version" value="0.1"/>
+  <context xmi:id="_0VAQJpNhEe6ztpJtSbfQrw"/>
+  <results xmi:id="_0VAQJ5NhEe6ztpJtSbfQrw">
+    <resultMetadata xmi:id="_0VAQKJNhEe6ztpJtSbfQrw"/>
+  </results>
+  <parameters xmi:id="_0VAQKZNhEe6ztpJtSbfQrw" analysisType="Table Analysis"/>
+</dataquality.analysis:Analysis>
