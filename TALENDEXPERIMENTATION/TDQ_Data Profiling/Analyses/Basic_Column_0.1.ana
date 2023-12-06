@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_4YZ5gJN0Ee6ztpJtSbfQrw" name="Basic Column" creationDate="2023-12-05T14:47:50.421+0000" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_4YZ5gJN0Ee6ztpJtSbfQrw" name="Basic Column" supplierDependency="_aBy3cJQkEe6DK-nHEF9bwg" creationDate="2023-12-05T14:47:50.421+0000" defaultContext="Default">
     <clientDependency href="../../metadata/fileDelimited/test_0.1.item#_BrYbYJNiEe6ztpJtSbfQrw"/>
     <taggedValue xmi:id="_4YZ5gZN0Ee6ztpJtSbfQrw" tag="Status" value="development"/>
     <taggedValue xmi:id="_4YZ5gpN0Ee6ztpJtSbfQrw" tag="Author" value="adrian.m.rutter@trial26375.eu.talend.com"/>
@@ -20,7 +20,7 @@
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_2A_sgJOQEe6ztpJtSbfQrw"/>
     </context>
     <results xmi:id="_4YZ5h5N0Ee6ztpJtSbfQrw">
-      <resultMetadata xmi:id="_4YZ5iJN0Ee6ztpJtSbfQrw" executionDate="2023-12-05T18:15:39.221+0000" executionDuration="48367" message="" executionNumber="13" lastRunOk="true" lastExecutionNumberOk="13"/>
+      <resultMetadata xmi:id="_4YZ5iJN0Ee6ztpJtSbfQrw" executionDate="2023-12-06T14:58:44.370+0000" executionDuration="69795" message="" executionNumber="23" lastRunOk="true" lastExecutionNumberOk="23"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XBydoJN1Ee6ztpJtSbfQrw" count="12234" computed="true">
         <parameters xmi:id="_XBydoZN1Ee6ztpJtSbfQrw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
@@ -229,6 +229,42 @@
           <sqlGenericExpression xmi:id="_XLrZd5N1Ee6ztpJtSbfQrw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
           <sqlGenericExpression xmi:id="_XLrZeJN1Ee6ztpJtSbfQrw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
           <sqlGenericExpression xmi:id="_XLrZeZN1Ee6ztpJtSbfQrw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:QuarterFrequencyIndicator" xmi:id="_d0_4wJQjEe6DK-nHEF9bwg" count="12234" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000532303233317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000002FCA78">
+        <parameters xmi:id="_d0_4wZQjEe6DK-nHEF9bwg">
+          <dateParameters xmi:id="_d0_4wpQjEe6DK-nHEF9bwg" dateAggregationType="quarter"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9JNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Quarter_Frequency_Table_0.1.definition#_hraIkzE2EeGvsfvHpG2Eqg"/>
+        <builtInIndicatorDefinition xmi:id="_d_i74JQjEe6DK-nHEF9bwg" name="Quarter Frequency Table" label="Quarter Frequency Table">
+          <taggedValue xmi:id="_d_i74ZQjEe6DK-nHEF9bwg" tag="Description" value="counts the number of records for each distinct record according to quarter"/>
+          <taggedValue xmi:id="_d_i74pQjEe6DK-nHEF9bwg" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_d_i745QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_d_i75JQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_d_i75ZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_d_i75pQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_d_i755QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_d_i76JQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_d_i76ZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:YearFrequencyIndicator" xmi:id="_d0_4w5QjEe6DK-nHEF9bwg" count="12234" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740004323032337372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000002FCA78">
+        <parameters xmi:id="_d0_4xJQjEe6DK-nHEF9bwg">
+          <dateParameters xmi:id="_d0_4xZQjEe6DK-nHEF9bwg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9JNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Year_Frequency_Table_0.1.definition#_hraIlTE2EeGvsfvHpG2Eqg"/>
+        <builtInIndicatorDefinition xmi:id="_d_vJIJQjEe6DK-nHEF9bwg" name="Year Frequency Table" label="Year Frequency Table">
+          <taggedValue xmi:id="_d_vJIZQjEe6DK-nHEF9bwg" tag="Description" value="counts the number of records for each distinct record according to year"/>
+          <taggedValue xmi:id="_d_vJIpQjEe6DK-nHEF9bwg" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_d_vJI5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_d_vJJJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_d_vJJZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_d_vJJpQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_d_vJJ5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_d_vJKJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_d_vJKZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_XBydwZN1Ee6ztpJtSbfQrw" count="12234" computed="true">
@@ -613,8 +649,44 @@
           <sqlGenericExpression xmi:id="_aLvAaZOREe6ztpJtSbfQrw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
         </builtInIndicatorDefinition>
       </indicators>
+      <indicators xsi:type="dataquality.indicators:QuarterFrequencyIndicator" xmi:id="_d0_4xpQjEe6DK-nHEF9bwg" count="12234" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000174000532303233317372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000002FCA78">
+        <parameters xmi:id="_d0_4x5QjEe6DK-nHEF9bwg">
+          <dateParameters xmi:id="_d0_4yJQjEe6DK-nHEF9bwg" dateAggregationType="quarter"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_2A_sgJOQEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Quarter_Frequency_Table_0.1.definition#_hraIkzE2EeGvsfvHpG2Eqg"/>
+        <builtInIndicatorDefinition xmi:id="_eABdAJQjEe6DK-nHEF9bwg" name="Quarter Frequency Table" label="Quarter Frequency Table">
+          <taggedValue xmi:id="_eABdAZQjEe6DK-nHEF9bwg" tag="Description" value="counts the number of records for each distinct record according to quarter"/>
+          <taggedValue xmi:id="_eABdApQjEe6DK-nHEF9bwg" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_eABdA5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_eABdBJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_eABdBZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_eABdBpQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_eABdB5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_eABdCJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_eABdCZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:YearFrequencyIndicator" xmi:id="_d0_4yZQjEe6DK-nHEF9bwg" count="12234" computed="true" distinctValueCount="1" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740004323032337372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000002FCA78">
+        <parameters xmi:id="_d0_4ypQjEe6DK-nHEF9bwg">
+          <dateParameters xmi:id="_d0_4y5QjEe6DK-nHEF9bwg"/>
+        </parameters>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_2A_sgJOQEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Year_Frequency_Table_0.1.definition#_hraIlTE2EeGvsfvHpG2Eqg"/>
+        <builtInIndicatorDefinition xmi:id="_eAO4YJQjEe6DK-nHEF9bwg" name="Year Frequency Table" label="Year Frequency Table">
+          <taggedValue xmi:id="_eAO4YZQjEe6DK-nHEF9bwg" tag="Description" value="counts the number of records for each distinct record according to year"/>
+          <taggedValue xmi:id="_eAO4YpQjEe6DK-nHEF9bwg" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_eAO4Y5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_eAO4ZJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_eAO4ZZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_eAO4ZpQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_eAO4Z5QjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_eAO4aJQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_eAO4aZQjEe6DK-nHEF9bwg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
     </results>
-    <parameters xmi:id="_4YZ5iZN0Ee6ztpJtSbfQrw" dataFilter="_EL1rVJN1Ee6ztpJtSbfQrw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <parameters xmi:id="_4YZ5iZN0Ee6ztpJtSbfQrw" dataFilter="_EL1rVJN1Ee6ztpJtSbfQrw" analysisType="Multiple Column Analysis" executionLanguage="Java" maxNumberRows="20000"/>
     <contextType xmi:id="_EL1EQJN1Ee6ztpJtSbfQrw" confirmationNeeded="false" hide="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <dataquality.domain:Domain xmi:id="_EL1rVJN1Ee6ztpJtSbfQrw" name="Basic Column">
@@ -624,4 +696,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_aBy3cJQkEe6DK-nHEF9bwg" kind="Usage" supplier="_4YZ5gJN0Ee6ztpJtSbfQrw">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/Basic_Column_0.1.rep#_aBxpUJQkEe6DK-nHEF9bwg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>

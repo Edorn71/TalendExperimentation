@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_aBxpUJQkEe6DK-nHEF9bwg" name="Basic Column" creationDate="2023-12-06T11:44:18.117+0000">
+  <clientDependency href="../Analyses/Basic_Column_0.1.ana#_aBy3cJQkEe6DK-nHEF9bwg"/>
+  <taggedValue xmi:id="_aBxpUZQkEe6DK-nHEF9bwg" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_aBxpUpQkEe6DK-nHEF9bwg" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_aBxpU5QkEe6DK-nHEF9bwg" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_aBxpVJQkEe6DK-nHEF9bwg" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_aBxpVZQkEe6DK-nHEF9bwg" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_aBxpVpQkEe6DK-nHEF9bwg" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_aBxpV5QkEe6DK-nHEF9bwg" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_aBxpWJQkEe6DK-nHEF9bwg" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_aBxpWZQkEe6DK-nHEF9bwg" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_aBxpWpQkEe6DK-nHEF9bwg" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:2qPxZprGU+RShyWCwUkU1TetZT/isuHw+nZ2QQ=="/>
+  <taggedValue xmi:id="_aBxpW5QkEe6DK-nHEF9bwg" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_aBxpXJQkEe6DK-nHEF9bwg" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Products\Talend-Studio-20230428_0423-V8.0.1\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_aBxpXZQkEe6DK-nHEF9bwg" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_aBxpXpQkEe6DK-nHEF9bwg" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_aBxpX5QkEe6DK-nHEF9bwg" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_aBxpYJQkEe6DK-nHEF9bwg" tag="Author" value="adrian.m.rutter@trial26375.eu.talend.com"/>
+  <analysisMap xmi:id="_aBxpYZQkEe6DK-nHEF9bwg" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Basic_Column_0.1.ana#_4YZ5gJN0Ee6ztpJtSbfQrw"/>
+  </analysisMap>
+</dataquality.reports:TdReport>
