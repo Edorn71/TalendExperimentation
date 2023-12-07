@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_gJUAgJTuEe68feWRiVM2ZA" name="Summary Statistics" creationDate="2023-12-07T11:50:57.541+0000" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/test_0.1.item#_BrYbYJNiEe6ztpJtSbfQrw"/>
+    <taggedValue xmi:id="_gJUAgZTuEe68feWRiVM2ZA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_gJUAgpTuEe68feWRiVM2ZA" tag="Author" value="adrian.m.rutter@trial26375.eu.talend.com"/>
+    <taggedValue xmi:id="_gJUAg5TuEe68feWRiVM2ZA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_gJUAhJTuEe68feWRiVM2ZA" tag="Description" value=""/>
+    <taggedValue xmi:id="_gJUAhZTuEe68feWRiVM2ZA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_gL1JAZTuEe68feWRiVM2ZA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_gL1JApTuEe68feWRiVM2ZA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_gL1JA5TuEe68feWRiVM2ZA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_gL1JIJTuEe68feWRiVM2ZA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_gJUAhpTuEe68feWRiVM2ZA">
+      <connection href="../../metadata/fileDelimited/test_0.1.item#_pxiRYJNhEe6ztpJtSbfQrw"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+    </context>
+    <results xmi:id="_gJUAh5TuEe68feWRiVM2ZA">
+      <resultMetadata xmi:id="_gJUAiJTuEe68feWRiVM2ZA"/>
+      <indicators xsi:type="dataquality.indicators:BoxIndicator" xmi:id="_gL1JBJTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JBZTuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Summary_Statistics_0.1.definition#_ccI48BF2Ed2PKb6nEJEvhw"/>
+        <IQR xmi:id="_gL1JBpTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Inter_Quartile_Range_0.1.definition#_ccI48xF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xsi:type="dataquality.indicators:LowerQuartileIndicator" xmi:id="_gL1JB5TuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Lower_Quartile_0.1.definition#_ccI49BF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xsi:type="dataquality.indicators:UpperQuartileIndicator" xmi:id="_gL1JCJTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Upper_Quartile_0.1.definition#_ccI49RF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </IQR>
+        <rangeIndicator xmi:id="_gL1JCZTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xmi:id="_gL1JCpTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xmi:id="_gL1JC5TuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </rangeIndicator>
+        <meanIndicator xmi:id="_gL1JDJTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Mean_0.1.definition#_ccI48RF2Ed2PKb6nEJEvhw"/>
+        </meanIndicator>
+        <medianIndicator xmi:id="_gL1JDZTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Median_0.1.definition#_ccI48hF2Ed2PKb6nEJEvhw"/>
+        </medianIndicator>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_gL1JDpTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JD5TuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_gL1JEJTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JEZTuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw85NhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BoxIndicator" xmi:id="_gL1JEpTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JE5TuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Summary_Statistics_0.1.definition#_ccI48BF2Ed2PKb6nEJEvhw"/>
+        <IQR xmi:id="_gL1JFJTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Inter_Quartile_Range_0.1.definition#_ccI48xF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xsi:type="dataquality.indicators:LowerQuartileIndicator" xmi:id="_gL1JFZTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Lower_Quartile_0.1.definition#_ccI49BF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xsi:type="dataquality.indicators:UpperQuartileIndicator" xmi:id="_gL1JFpTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Upper_Quartile_0.1.definition#_ccI49RF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </IQR>
+        <rangeIndicator xmi:id="_gL1JF5TuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Range_0.1.definition#_ccI49hF2Ed2PKb6nEJEvhw"/>
+          <lowerValue xmi:id="_gL1JGJTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Minimum_0.1.definition#_ccJgABF2Ed2PKb6nEJEvhw"/>
+          </lowerValue>
+          <upperValue xmi:id="_gL1JGZTuEe68feWRiVM2ZA">
+            <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Maximum_0.1.definition#_ccJgARF2Ed2PKb6nEJEvhw"/>
+          </upperValue>
+        </rangeIndicator>
+        <meanIndicator xmi:id="_gL1JGpTuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Mean_0.1.definition#_ccI48RF2Ed2PKb6nEJEvhw"/>
+        </meanIndicator>
+        <medianIndicator xmi:id="_gL1JG5TuEe68feWRiVM2ZA">
+          <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Median_0.1.definition#_ccI48hF2Ed2PKb6nEJEvhw"/>
+        </medianIndicator>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_gL1JHJTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JHZTuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_gL1JHpTuEe68feWRiVM2ZA">
+        <parameters xmi:id="_gL1JH5TuEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9pNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_gJUAiZTuEe68feWRiVM2ZA" dataFilter="_gL1wEJTuEe68feWRiVM2ZA" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_gL1JAJTuEe68feWRiVM2ZA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_gL1wEJTuEe68feWRiVM2ZA" name="Summary Statistics">
+    <ranges xmi:id="_gL1wEZTuEe68feWRiVM2ZA">
+      <expressions xmi:id="_gL1wEpTuEe68feWRiVM2ZA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_gL1wE5TuEe68feWRiVM2ZA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

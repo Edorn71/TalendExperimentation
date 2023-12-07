@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_hstiYJTtEe68feWRiVM2ZA" name="Nominal" creationDate="2023-12-07T11:43:58.466+0000" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/test_0.1.item#_BrYbYJNiEe6ztpJtSbfQrw"/>
+    <taggedValue xmi:id="_hstiYZTtEe68feWRiVM2ZA" tag="Status" value="development"/>
+    <taggedValue xmi:id="_hstiYpTtEe68feWRiVM2ZA" tag="Author" value="adrian.m.rutter@trial26375.eu.talend.com"/>
+    <taggedValue xmi:id="_hstiY5TtEe68feWRiVM2ZA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_hstiZJTtEe68feWRiVM2ZA" tag="Description" value=""/>
+    <taggedValue xmi:id="_hstiZZTtEe68feWRiVM2ZA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_hvB2kZTtEe68feWRiVM2ZA" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_hvB2kpTtEe68feWRiVM2ZA" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_hvCdoJTtEe68feWRiVM2ZA" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_hvCdr5TtEe68feWRiVM2ZA" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_hstiZpTtEe68feWRiVM2ZA">
+      <connection href="../../metadata/fileDelimited/test_0.1.item#_pxiRYJNhEe6ztpJtSbfQrw"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+    </context>
+    <results xmi:id="_hstiZ5TtEe68feWRiVM2ZA">
+      <resultMetadata xmi:id="_hstiaJTtEe68feWRiVM2ZA" executionDate="2023-12-07T11:44:19.884+0000" executionDuration="903" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_hvCdoZTtEe68feWRiVM2ZA" count="12234" computed="true">
+        <parameters xmi:id="_hvCdopTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k4dFoJTtEe68feWRiVM2ZA" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_k4dFoZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_k4dFopTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_k4dFo5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_hvCdo5TtEe68feWRiVM2ZA" count="12234" computed="true">
+        <parameters xmi:id="_hvCdpJTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_k4gwAJTtEe68feWRiVM2ZA" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_k4gwAZTtEe68feWRiVM2ZA" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_k4gwApTtEe68feWRiVM2ZA" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_k4gwA5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_hvCdpZTtEe68feWRiVM2ZA" count="12234" computed="true" distinctValueCount="5010">
+        <parameters xmi:id="_hvCdppTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k4jzUJTtEe68feWRiVM2ZA" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_k4jzUZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_k4jzUpTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_k4jzU5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_hvCdp5TtEe68feWRiVM2ZA" count="12234" computed="true" uniqueValueCount="1781">
+        <parameters xmi:id="_hvCdqJTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k4ndsJTtEe68feWRiVM2ZA" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_k4ndsZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_k4ndspTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_k4nds5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_k4ndtJTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_k4ndtZTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_k4ndtpTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_k4ndt5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_k4nduJTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_k4nduZTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_hvCdqZTtEe68feWRiVM2ZA" count="12234" computed="true" duplicateValueCount="3229">
+        <parameters xmi:id="_hvCdqpTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k4rIEJTtEe68feWRiVM2ZA" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_k4rIEZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_k4rIEpTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_k4rIE5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_k4rIFJTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_k4rIFZTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_k4rIFpTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_k4rIF5TtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_k4rIGJTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_k4rIGZTtEe68feWRiVM2ZA" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_hvCdq5TtEe68feWRiVM2ZA" count="12234" computed="true">
+        <parameters xmi:id="_hvCdrJTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k4x1wJTtEe68feWRiVM2ZA" name="Blank Count" label="Blank Count">
+          <taggedValue xmi:id="_k4x1wZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of blank rows. A blank is a non null textual data that contains only white spaces (or nothing). Note that Oracle does not distinguish between the empty string and the null value"/>
+          <taggedValue xmi:id="_k4x1wpTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the number of blank records"/>
+          <sqlGenericExpression xmi:id="_k4x1w5TtEe68feWRiVM2ZA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_k4x1xJTtEe68feWRiVM2ZA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE TRIM(&lt;%=__COLUMN_NAMES__%>) IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_k4x1xZTtEe68feWRiVM2ZA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+          <sqlGenericExpression xmi:id="_k4x1xpTtEe68feWRiVM2ZA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_k4x1x5TtEe68feWRiVM2ZA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_hvCdrZTtEe68feWRiVM2ZA" count="12234" computed="true" distinctValueCount="10" uniqueValueCount="1781" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000B31323A33343A323020504D7372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000E74000B31313A34393A343320414D71007E000574000A313A32373A313120504D71007E000574000B31323A32343A333620504D7371007E0003000000000000001074000A313A35383A343420504D7371007E0003000000000000000F74000A313A31333A333320504D71007E000974000B31323A31363A333420504D71007E000574000B31313A34393A303120414D71007E000974000A313A30393A323020504D71007E000574000B31323A30373A313620504D71007E000978">
+        <parameters xmi:id="_hvCdrpTtEe68feWRiVM2ZA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/test_0.1.item#_pxnw9ZNhEe6ztpJtSbfQrw"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_k43VUJTtEe68feWRiVM2ZA" name="Frequency Table" label="Frequency Table">
+          <taggedValue xmi:id="_k43VUZTtEe68feWRiVM2ZA" tag="Description" value="counts the number of records for each distinct record"/>
+          <taggedValue xmi:id="_k43VUpTtEe68feWRiVM2ZA" tag="Purpose" value="evaluates the most frequent records"/>
+          <sqlGenericExpression xmi:id="_k43VU5TtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_k43VVJTtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_k43VVZTtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_k43VVpTtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY COUNT(*) DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_k43VV5TtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_k43VWJTtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_k43VWZTtEe68feWRiVM2ZA" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_hstiaZTtEe68feWRiVM2ZA" dataFilter="_hvDEsJTtEe68feWRiVM2ZA" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_hvB2kJTtEe68feWRiVM2ZA" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_hvDEsJTtEe68feWRiVM2ZA" name="Nominal">
+    <ranges xmi:id="_hvDEsZTtEe68feWRiVM2ZA">
+      <expressions xmi:id="_hvDEspTtEe68feWRiVM2ZA">
+        <expression xsi:type="relational:TdExpression" xmi:id="_hvDEs5TtEe68feWRiVM2ZA" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
